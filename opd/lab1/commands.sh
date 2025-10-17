@@ -44,28 +44,35 @@ chmod 064 lab0/wormadam7
 
 chmod u+r lab0/onix9/skitty
 cat lab0/onix9/golbat lab0/onix9/skitty > lab0/mismagius4_62
+chmod u-r lab0/onix9/skitty
 cp -r lab0/mienfoo0 lab0/onix9/swablu
 chmod u+w lab0/onix9
 ln -s ../sunkern6 lab0/onix9/golbatsunkern
+chmod u-w lab0/onix9
 chmod u+w lab0/onix9/gurdurr
 cp lab0/sunkern6 lab0/onix9/gurdurr
+chmod u-w lab0/onix9/gurdurr
+chmod u+w lab0/onix9
 cat lab0/mismagius4 > lab0/onix9/skittymismagius
 ln -s mienfoo0 lab0/Copy_23 
 ln lab0/sunkern6 lab0/floatzel5/walreinsunkern
 
 wc -l lab0/floatzel5/nidoranM lab0/onix9/skitty 2>/dev/null > /tmp/count
-chmod u-r lab0/onix9/skitty
 ls -tlR lab0 2>&1 | grep 'y$' 
 cat -n lab0/sunkern6 2>/tmp/errors | sort -r
 ls lab0/mienfoo0 2>/dev/null | sort -r 
 chmod u+w lab0/sunkern6
 wc -m lab0/sunkern6 >> lab0/sunkern6 2>&1
+chmod u-w lab0/sunkern6
 ls -lR lab0 2>&1 | grep '^[\-d]' | sort -k5 -n | head -n 2  
 
 rm lab0/mismagius4
+chmod u+rwx lab0/onix9/golbat
 rm lab0/onix9/golbat
 rm lab0/Copy_*
-rm lab0/floatzel5/walreinsunke* 
+chmod u+r lab0/floatzel5
+rm -f lab0/floatzel5/walreinsunke* 
+chmod u-r lab0/floatzel5
 chmod -R u+rw lab0/onix9
 rm -r lab0/onix9
 rmdir lab0/floatzel5/grotle
