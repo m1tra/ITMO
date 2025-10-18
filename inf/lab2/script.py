@@ -24,7 +24,7 @@ def validate_input(a_str):
         return "Ошибка: допускаются только символы 0 и 1."
     return None  
 
-
+11
 def show_answer(a):
     error_bit = find_error_bit(a)
     if error_bit == 0:
@@ -33,14 +33,13 @@ def show_answer(a):
     else:
         corrected = a.copy()
         corrected[error_bit - 1] ^= 1
-        corrected = [corrected[2],corrected[4],corrected[5],corrected[6]]
         print(f"Ошибка найдена в бите №{error_bit}")
         print("Исправленная последовательность:", "".join(map(str, corrected)))
 
 
 a_str = input("Введите 7 битов (например 1011010): ").strip()
 
-error = validate_input(a_str)
+error = None
 if error:
     print(error)
 else:
