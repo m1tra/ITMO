@@ -18,13 +18,11 @@ def find_error_bit(a):
 
 
 def validate_input(a_str):
-    if len(a_str) != 7:
-        return "Ошибка: длина должна быть ровно 7 бит."
     if not all(bit in "01" for bit in a_str):
         return "Ошибка: допускаются только символы 0 и 1."
     return None  
 
-11
+
 def show_answer(a):
     error_bit = find_error_bit(a)
     if error_bit == 0:
@@ -37,9 +35,9 @@ def show_answer(a):
         print("Исправленная последовательность:", "".join(map(str, corrected)))
 
 
-a_str = input("Введите 7 битов (например 1011010): ").strip()
+a_str = input("Введите n битов (например 1011010): ").strip()
 
-error = None
+error = validate_input(a_str) 
 if error:
     print(error)
 else:
